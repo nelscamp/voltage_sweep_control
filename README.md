@@ -12,8 +12,8 @@ A control software interface for the SMU4201 source measure unit (SMU), specific
  - GUI Library: CustomTkinter
  - Supported Hardware: SMU4201 source measure unit (Note: may need to rewrite commands if using different source meters due to syntax differences.)
 
-## Getting Started
-# Prerequisites
+# Getting Started
+## Prerequisites
 Ensure you have the following installed:
  - Python 3.x
  - CustomTkinter
@@ -21,6 +21,8 @@ Ensure you have the following installed:
 
 To install the dependencies, run:
 
+bash
+copy code
 pip install customtkinter pyvisa matplotlib numpy scipy
 
 # Installation
