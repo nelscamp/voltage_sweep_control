@@ -21,14 +21,14 @@ Ensure you have the following installed:
 
 To install the dependencies, run:
 
-'pip install customtkinter pyvisa matplotlib numpy scipy'
+`pip install customtkinter pyvisa matplotlib numpy scipy`
 
 # Installation
 Clone this repository:
-'''
+```
 git clone https://github.com/nelscamp/voltage_sweep_control.git
 cd SMU4201-langmuir-control
-'''
+```
 
 # Running the Application
 To start the control software, execute:
