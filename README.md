@@ -19,9 +19,7 @@ Ensure you have the following installed:
  - CustomTkinter
  - PyVISA (for SMU control)
 
-To install the dependencies, run:
-
-`pip install customtkinter pyvisa matplotlib numpy scipy`
+Run `pip install customtkinter pyvisa matplotlib numpy scipy` to install all dependencies.
 
 # Installation
 Clone this repository:
