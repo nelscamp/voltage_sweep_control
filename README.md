@@ -8,9 +8,9 @@ A control software interface for the **SMU4201 source measure unit (SMU)**, spec
  - **User-Friendly Interface**: An intuitive GUI built with CustomTkinter for ease of use.
 
 # Technical Details
- - Language: Python
- - GUI Library: CustomTkinter
- - Supported Hardware: SMU4201 source measure unit
+ - **Language**: Python
+ - **GUI Library**: CustomTkinter
+ - **Supported Hardware**: SMU4201 Source Measure Unit
 *Note: may require rewriting commands if using different source meters due to syntax differences*
 
 # Getting Started
@@ -39,10 +39,10 @@ python main.py
 ```
 
 # Usage
-1. Setup Voltage Sweep: Input voltage range, step size, and any additional sweep parameters.
-2. Start Sweep: Begin the Langmuir probe sweep to capture current data.
-3. Generate IV Curve: The software will process the data and display an IV curve.
-4. Data Export: Save the generated data for additional analysis if needed.
+1. **Setup Voltage Sweep**: Input voltage range, step size, and any additional sweep parameters.
+2. **Start Sweep**: Begin the Langmuir probe sweep to capture current data.
+3. **Generate IV Curve**: The software will process the data and display an IV curve.
+4. **Data Export**: Save the generated data for additional analysis if needed.
 
 # File Structure
 1. main.py: Main entry point for the software.
