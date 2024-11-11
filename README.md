@@ -1,16 +1,17 @@
 # Voltage Sweep Control
-A control software interface for the SMU4201 source measure unit (SMU), specifically designed for controlling Langmuir probe voltage sweeps and generating IV (current-voltage) curves. These curves are essential for characterizing plasma properties, such as electron density, temperature, and plasma potential.
+A control software interface for the **SMU4201 source measure unit (SMU)**, specifically designed for controlling **Langmuir probe voltage sweeps** and generating IV (current-voltage) curves. These curves are essential for characterizing plasma properties, such as electron density, temperature, and plasma potential.
 
 # Key Features
- - Voltage Sweep Control: Configure and control voltage parameters for Langmuir probe sweeps.
- - IV Curve Generation: Automatically capture and plot IV curves for plasma analysis.
- - Data Export: Export data in common formats for further processing and visualization.
- - User-Friendly Interface: An intuitive GUI built with CustomTkinter for ease of use.
+ - **Voltage Sweep Control**: Configure and control voltage parameters for Langmuir probe sweeps.
+ - **IV Curve Generation**: Automatically capture and plot IV curves for plasma analysis.
+ - **Data Export**: Export data in common formats for further processing and visualization.
+ - **User-Friendly Interface**: An intuitive GUI built with CustomTkinter for ease of use.
 
 # Technical Details
  - Language: Python
  - GUI Library: CustomTkinter
- - Supported Hardware: SMU4201 source measure unit (Note: may need to rewrite commands if using different source meters due to syntax differences.)
+ - Supported Hardware: SMU4201 source measure unit
+*Note: may require rewriting commands if using different source meters due to syntax differences*
 
 # Getting Started
 ## Prerequisites
