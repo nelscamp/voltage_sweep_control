@@ -25,7 +25,7 @@ To install all dependencies, run:
 pip install customtkinter pyvisa matplotlib numpy scipy
 ```
 
-# Installation
+## Installation
 Clone this repository:
 ```
 git clone https://github.com/nelscamp/voltage_sweep_control.git
