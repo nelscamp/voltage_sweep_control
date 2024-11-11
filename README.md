@@ -19,19 +19,23 @@ Ensure you have the following installed:
  - CustomTkinter
  - PyVISA (for SMU control)
 
-Run `pip install customtkinter pyvisa matplotlib numpy scipy` to install all dependencies.
+To install all dependencies, run:
+```
+pip install customtkinter pyvisa matplotlib numpy scipy
+```
 
 # Installation
 Clone this repository:
 ```
 git clone https://github.com/nelscamp/voltage_sweep_control.git
-cd SMU4201-langmuir-control
+cd C:/path/to/folder/voltage_sweep_control
 ```
 
 # Running the Application
 To start the control software, execute:
-
+```
 python main.py
+```
 
 # Usage
 1. Setup Voltage Sweep: Input voltage range, step size, and any additional sweep parameters.
