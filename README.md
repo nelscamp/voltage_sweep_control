@@ -21,15 +21,13 @@ Ensure you have the following installed:
 
 To install the dependencies, run:
 
-bash
-copy code
-pip install customtkinter pyvisa matplotlib numpy scipy
+''' pip install customtkinter pyvisa matplotlib numpy scipy '''
 
 # Installation
 Clone this repository:
 
-git clone https://github.com/yourusername/SMU4201-langmuir-control.git
-cd SMU4201-langmuir-control
+''' git clone https://github.com/yourusername/SMU4201-langmuir-control.git
+cd SMU4201-langmuir-control '''
 
 # Running the Application
 To start the control software, execute:
