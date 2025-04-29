@@ -52,3 +52,6 @@ python main.py
 4. requirements.txt: File of all dependencies used.
 5. environment.yml: Source file of all dependencies used.
 6. README.md: Project documentation.
+
+# Credits
+## Nelson Campos and Russell Burns
