@@ -1,0 +1,15 @@
+# Core scientific stack
+numpy
+pandas
+matplotlib
+scipy
+
+# GUI toolkits
+pyqt5           # Qt bindings for main.py
+Pillow          # PIL fork for GIF/PNG handling
+
+# Instrument control
+pyvisa          # high-level VISA API
+pyvisa-py       # pure-Python backend so users don’t need NI-VISA
+
+# (Everything else used is from the Python stdlib: os, sys, tkinter, etc.)
