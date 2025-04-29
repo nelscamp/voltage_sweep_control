@@ -13,6 +13,9 @@ A control software interface for the **SMU4201 source measure unit (SMU)**, spec
 *Note: may require rewriting commands if using different source meters due to syntax differences*
 
 # Getting Started
+# Prerequisites:
+Install NI-VISA and NI 488.2 from NI.com
+
 ## Installation
 Clone this repository:
 ```
