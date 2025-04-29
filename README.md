@@ -49,5 +49,7 @@ python main.py
 1. main.py: Main entry point for the software.
 2. GUIFinalRefactored.py: Analysis window.
 3. starsmall.gif: Necessary for analysis window.
-4. README.md: Project documentation.
-5. LICENSE: Licensing information.
+4. requirements.txt: File of all dependencies used.
+5. environment.yml: Source file of all dependencies used.
+6. README.md: Project documentation.
+7. LICENSE: Licensing information.
