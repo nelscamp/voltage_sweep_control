@@ -29,7 +29,10 @@ To install all dependencies, run:
 conda env create -f environment.yml      # creates the env from YAML
 conda activate langmuir-gui-env          # activate it
 ```
-
+or
+```
+pip install -r requirements.txt
+```
 # Running the Application
 To start the control software, execute:
 ```
