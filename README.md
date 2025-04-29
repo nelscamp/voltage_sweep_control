@@ -35,6 +35,11 @@ cd C:/path/to/folder/voltage_sweep_control
 # Running the Application
 To start the control software, execute:
 ```
+# one-time setup
+conda env create -f environment.yml      # creates the env from YAML
+conda activate langmuir-gui-env          # activate it
+
+# run your application
 python main.py
 ```
 
@@ -46,6 +51,7 @@ python main.py
 
 # File Structure
 1. main.py: Main entry point for the software.
-2. RevD.py: Configuration file for the SMU4201 device.
-3. README.md: Project documentation.
-4. LICENSE: Licensing information.
+2. GUIFinalRefactored.py: Analysis window.
+3. environment.yml: Source file of all libaries/dependencies.
+4. README.md: Project documentation.
+5. LICENSE: Licensing information.
