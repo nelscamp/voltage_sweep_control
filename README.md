@@ -46,6 +46,6 @@ python main.py
 
 # File Structure
 1. main.py: Main entry point for the software.
-2. RevD.py: Configuration file for the SMU4201 device.
+2. GUIFinalRefactored.py: Analysis window.
 3. README.md: Project documentation.
 4. LICENSE: Licensing information.
