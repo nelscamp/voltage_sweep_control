@@ -5,31 +5,26 @@ A control software interface for the **SMU4201 source measure unit (SMU)**, spec
  - **Voltage Sweep Control**: Configure and control voltage parameters for Langmuir probe sweeps.
  - **IV Curve Generation**: Automatically capture and plot IV curves for plasma analysis.
  - **Data Export**: Export data in common formats for further processing and visualization.
- - **User-Friendly Interface**: An intuitive GUI built with CustomTkinter for ease of use.
 
 # Technical Details
  - **Language**: Python
- - **GUI Library**: CustomTkinter
+ - **GUI Library**: PYQT (main.py) ; CustomTkinter (GUIFinalRefactored.py)
  - **Supported Hardware**: SMU4201 Source Measure Unit
 *Note: may require rewriting commands if using different source meters due to syntax differences*
 
 # Getting Started
-## Prerequisites
-Ensure you have the following installed:
- - Python 3.x
- - CustomTkinter
- - PyVISA (for SMU control)
-
-To install all dependencies, run:
-```
-pip install customtkinter pyvisa matplotlib numpy scipy
-```
-
 ## Installation
 Clone this repository:
 ```
 git clone https://github.com/nelscamp/voltage_sweep_control.git
 cd C:/path/to/folder/voltage_sweep_control
+```
+
+To install all dependencies, run:
+```
+# one-time setup
+conda env create -f environment.yml      # creates the env from YAML
+conda activate langmuir-gui-env          # activate it
 ```
 
 # Running the Application
@@ -47,5 +42,6 @@ python main.py
 # File Structure
 1. main.py: Main entry point for the software.
 2. GUIFinalRefactored.py: Analysis window.
-3. README.md: Project documentation.
-4. LICENSE: Licensing information.
+3. starsmall.gif: Necessary for analysis window.
+4. README.md: Project documentation.
+5. LICENSE: Licensing information.
