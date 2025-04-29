@@ -1,0 +1,20 @@
+name: langmuir-gui-env          # whatever name you like
+channels:
+  - conda-forge                 # guarantees the same builds on all OSes
+dependencies:
+  # ---------- core ----------
+  - python =3.10                # tested with 3.10; bump if you need newer
+  - numpy                       # numerical work
+  - pandas                      # CSV I/O & data frames
+  - matplotlib                  # plotting back-end
+  - scipy                       # special functions, integrate.quad
+  - pillow                      # PIL for GIF/PNG handling
+  - pyqt                        # Qt5 bindings that matplotlib uses
+  - pyvisa                      # instrument control (high-level API)
+  - tk                          # tkinter GUI (conda supplies its own Tk)
+
+  # ---------- pip-only extras ----------
+  - pip                         # exposes the pip section below
+  - pip:
+      - pyvisa-py               # pure-python VISA backend → lets PyVISA talk
+                                # to serial/USB instruments without NI-VISA
