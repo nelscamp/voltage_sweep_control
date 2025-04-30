@@ -13,7 +13,7 @@ import numpy as np
 from multiprocessing import Process
 
 
-from analysis_window import launch_plot_from_data
+# from analysis_window import launch_plot_from_data
 
 # from analysis_window_pyqt_v2 import launch_plot_from_data
 
