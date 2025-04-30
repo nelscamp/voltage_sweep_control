@@ -36,23 +36,29 @@ To start the control software, execute:
 python main.py
 ```
 ## Usage
+**How to use:**
 1. **Setup Voltage Sweep**: Input voltage range, current compliance, and adaptive sensitivity.
 3. **Start Sweep**: Begin the Langmuir probe sweep to capture voltage-current data.
 4. **Generate IV Curve**: The software will process the data and display an IV curve.
 5. **Data Export**: Save the generated data for additional analysis if needed.
 
-**Adaptive Sensitivity Input:**
-An input of 5.0 µA means, if:
-ΔI > 5.0 µA then step size decreases,
-ΔI ~ 5.0 µA step size stays around base step,
-ΔI < 5.0 µA step size increases.
-*ΔI - change in current*
+#### Adaptive Sensitivity Input:
+Adaptive Sensitivity of **5.0 µA** means, if: <br/>
+- **ΔI > 5.0 µA**, step size **decreases**,
+- **ΔI ~ 5.0 µA**, step size stays around **base**,
+- **ΔI < 5.0 µA**, step size **increases**.
+
+*ΔI refers to change in current between successive points.*
 
 | Resolution | Input Ranges |
 | --- | ---: |
 | Fast/Low Resolution | 10 µA + |
 | Balanced | 3 µA - 8 µA |
 | Slow/High Resolution | .1 µA - 2 µA |
+
+**Step Sizes:** <br/>
+**- Base Step Size:** _0.25V_ <br/>
+**- Range:** _0.025V_ - _0.5V_
 ### Import Data for Analysis Window
 1. Click the "Upload CSV" button (before opening analysis window).
 2. Click on "Analysis Window" button.
@@ -62,13 +68,13 @@ An input of 5.0 µA means, if:
 3. Click "log" button to find floating potential (the local min).
 4. Check print lines for the calculated parameters.
 
-**Sample parameters for the supplied sample data (voltage sweep 23)**
-Voltage Range: 40 to 70 (volts)
-e- Temperature: .9
-e- Density: .65e14
-Probe Diameter: .8
-Probe Length: 12.7
-Floating Potential: 55.35
+**Sample parameters for the supplied sample data (voltage sweep 23)** <br/>
+Voltage Range: 40 to 70 (volts) <br/>
+e- Temperature: .9 <br/>
+e- Density: .65e14 <br/>
+Probe Diameter: .8 <br/>
+Probe Length: 12.7 <br/>
+Floating Potential: 55.35 <br/>
 ## File Structure
 1. main.py: Main entry point for the software.
 2. GUIFinalRefactored.py: Analysis window.
