@@ -59,8 +59,9 @@ An input of 5.0 µA means, if:
 ### Analysis Window
 1. Before clicking anything, input known parameters into the entry boxes.
 2. Once all entry boxes are filled, click on the "plot" button.
-3. Click "log" button to find floating potential (the local min)
+3. Click "log" button to find floating potential (the local min).
 4. Check print lines for the calculated parameters.
+
 **Sample parameters for the supplied sample data (voltage sweep 23)**
 Voltage Range: 40 to 70 (volts)
 e- Temperature: .9
