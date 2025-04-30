@@ -68,7 +68,7 @@ class SweepWorker(QtCore.QObject):
             # Start the sweep using adaptive stepping.
             voltage = self.min_voltage
             base_step = 0.25  # Standard base step.
-            min_step = 0.01
+            min_step = 0.025
             max_step = base_step * 2
             step = base_step
             previous_current = None
@@ -191,9 +191,16 @@ class MainWindow(QtWidgets.QMainWindow):
         max_voltage_validator.setNotation(QtGui.QDoubleValidator.StandardNotation)
         self.max_voltage_edit.setValidator(max_voltage_validator)
         
-        self.sensitivity_edit = QtWidgets.QLineEdit()
-        self.sensitivity_edit.setPlaceholderText("Adaptive Sensitivity")
-        self.sensitivity_edit.setValidator(QtGui.QRegExpValidator(QtCore.QRegExp(r"^\d+(\.\d+)?$")))
+        self.sensitivity_spin = QtWidgets.QDoubleSpinBox()
+        self.sensitivity_spin.setDecimals(1)
+        self.sensitivity_spin.setSuffix(" µA")
+        self.sensitivity_spin.setRange(0.1, 25.0)
+        self.sensitivity_spin.setSingleStep(0.1)
+        self.sensitivity_spin.setValue(5.0)
+
+        # self.sensitivity_edit = QtWidgets.QLineEdit()
+        # self.sensitivity_edit.setPlaceholderText("Adaptive Sensitivity")
+        # self.sensitivity_edit.setValidator(QtGui.QRegExpValidator(QtCore.QRegExp(r"^\d+(\.\d+)?$")))
         
         # Add the input widgets and their labels to the grid layout.
         controls_layout.addWidget(QtWidgets.QLabel("Current Compliance (A):"), 0, 0)
@@ -203,7 +210,7 @@ class MainWindow(QtWidgets.QMainWindow):
         controls_layout.addWidget(QtWidgets.QLabel("Max Voltage (V):"), 2, 0)
         controls_layout.addWidget(self.max_voltage_edit, 2, 1)
         controls_layout.addWidget(QtWidgets.QLabel("Adaptive Sensitivity:"), 3, 0)
-        controls_layout.addWidget(self.sensitivity_edit, 3, 1)
+        controls_layout.addWidget(self.sensitivity_spin, 3, 1)
         
         # Create primary control buttons.
         self.connect_button = QtWidgets.QPushButton("Connect/Initialize")
@@ -321,7 +328,7 @@ class MainWindow(QtWidgets.QMainWindow):
             current_limit = float(self.current_limit_edit.text())
             min_voltage = float(self.min_voltage_edit.text())
             max_voltage = float(self.max_voltage_edit.text())
-            sensitivity = float(self.sensitivity_edit.text())
+            sensitivity = self.sensitivity_spin.value() * 1e-6
         except ValueError:
             QtWidgets.QMessageBox.warning(self, "Input Error", "Please enter valid numeric parameters.")
             return
