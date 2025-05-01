@@ -70,7 +70,7 @@ Adaptive Sensitivity of **5.0 µA** means, if: <br/>
 4. Check print lines for the calculated parameters.
 
 **Sample parameters for the supplied sample data (voltage sweep 23)** <br/>
-Voltage Range: 40 to 70 (volts) <br/>
+Voltage Range: 40 to 70 <br/>
 e- Temperature: .9 <br/>
 e- Density: .65e14 <br/>
 Probe Diameter: .8 <br/>
