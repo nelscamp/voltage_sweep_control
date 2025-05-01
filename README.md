@@ -10,6 +10,7 @@ A control software interface for the **SMU4201 source measure unit (SMU)**, spec
  - **Language**: Python
  - **GUI Library**: PYQT (main.py) ; CustomTkinter (GUIFinalRefactored.py)
  - **Supported Hardware**: SMU4201 Source Measure Unit
+
 *Note: may require rewriting commands if using different source meters due to syntax differences*
 ## Getting Started
 ### Prerequisites:
