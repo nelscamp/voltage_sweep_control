@@ -505,7 +505,7 @@ class MainWindow(QtWidgets.QMainWindow):
                 "No data available for analysis. Please run a sweep or upload CSV data first."
             )
             return
-        # import the new launcher from your refactored GUI module
+        # import the new launcher from refactored GUI module
         from GUIFinalRefactored import launch_GUIFinal
         measured_data = np.column_stack((self.voltages, self.currents))
         proc  = Process(target=launch_GUIFinal, args=(measured_data,), daemon=True)
